@@ -1,48 +1,60 @@
 class Calculator {
     firstParameter: number;
     secondParameter: number;
-    constructor(firstParameter: number,secondParameter: number) {
-       this.firstParameter = firstParameter;
-       this.secondParameter = secondParameter;
+
+    constructor(firstParameter: number, secondParameter: number) {
+        this.firstParameter = firstParameter;
+        this.secondParameter = secondParameter;
     }
+
     getResultAddition() {
         const expectedResult: number = this.firstParameter + this.secondParameter;
-        return  expectedResult === 8 ? "Test passed" : "Test failed";
-    }getResultAdditionNegative() {
-        const expectedResult: number = this.firstParameter + this.secondParameter;
-        return  expectedResult === 10 ? "Test passed" : "Test failed";
+        return expectedResult === 8 ? "Test passed" : "Test failed";
     }
+
+    getResultAdditionNegative() {
+        const expectedResult: number = this.firstParameter + this.secondParameter;
+        return expectedResult === 10 ? "Test passed" : "Test failed";
+    }
+
     getResultSubtraction() {
         const expectedResult: number = this.firstParameter - this.secondParameter;
-        return expectedResult === -2 ?  "Test passed" : "Test failed";
+        return expectedResult === -2 ? "Test passed" : "Test failed";
     }
+
     getResultSubtractionNegative() {
         const expectedResult: number = this.firstParameter - this.secondParameter;
         return expectedResult === -2 ? "Test passed" : "Test failed";
     }
+
     getResultMultiplication() {
         const expectedResult: number = this.firstParameter * this.secondParameter;
-        return expectedResult !== 15 ?  "Test failed" : "Test passed";
+        return expectedResult !== 15 ? "Test failed" : "Test passed";
     }
+
     getResultMultiplicationNegative() {
         const expectedResult: number = this.firstParameter * this.secondParameter;
         return expectedResult !== 15 ? "Test failed" : "Test passed";
     }
+
     getResultDivision() {
         const expectedResult: number = this.firstParameter / this.secondParameter;
-        return expectedResult !== 0.6 ?  "Test failed" : "Test passed";
+        return expectedResult !== 0.6 ? "Test failed" : "Test passed";
     }
+
     getResultDivisionNegative() {
         const expectedResult: number = this.firstParameter / this.secondParameter;
-        return expectedResult !== 0.6 ?  "Test failed" : "Test passed";
+        return expectedResult !== 0.6 ? "Test failed" : "Test passed";
     }
+
     getResultExponentiation() {
         const expectedResult: number = this.firstParameter ** this.secondParameter;
-        return expectedResult !== 243 ?  "Test failed" : "Test passed";
+        return expectedResult !== 243 ? "Test failed" : "Test passed";
     }
+
     getResultExponentiationNegative() {
         const expectedResult: number = this.firstParameter ** this.secondParameter;
-        return expectedResult !== 243 ?  "Test failed" : "Test passed";
+        return expectedResult !== 243 ? "Test failed" : "Test passed";
     }
 }
 
